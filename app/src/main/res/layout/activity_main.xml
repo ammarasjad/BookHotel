@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/landing_page"
+    tools:context="ammar.com.bookhotel.MainActivity">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:id="@+id/main_lay"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text77"
+        android:textSize="15dp"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:text="If you already have an account. Login here"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="#ffffff"
+        android:id="@+id/text78"
+        android:layout_below="@+id/text77"
+        android:layout_centerHorizontal="true"
+        android:text="If not, Please register first"
+        />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="Enter your Email"
+            android:textSize="12dp"
+            android:ems="10"
+            android:layout_below="@+id/text78"
+            android:padding="15dp"
+            android:background="@mipmap/email_and_password_back"
+            android:id="@+id/email"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter Password"
+            android:textSize="12dp"
+            android:padding="15dp"
+            android:inputType="textPassword"
+            android:layout_below="@+id/email"
+            android:background="@mipmap/email_and_password_back"
+            android:id="@+id/password"
+            />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/login_button"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="10dp"
+        android:id="@+id/login"
+        android:layout_alignRight="@id/password"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/register_button"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="10dp"
+        android:id="@+id/register_now"
+        />
+    </RelativeLayout>
+</RelativeLayout>

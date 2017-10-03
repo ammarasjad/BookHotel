@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_payment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/booking_background"
+    tools:context="ammar.com.bookhotel.Payment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/payment_header"
+        android:id="@+id/header"
+        />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/payent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+
+        android:textSize="15dp"
+        android:textColor="#ffffff"
+        android:id="@+id/text1"
+        android:text="Please enter dummy values"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text1"
+        android:textSize="15dp"
+        android:textColor="#ffffff"
+        android:id="@+id/text2"
+        android:layout_centerHorizontal="true"
+        android:text="We don't need you real credit card values"
+
+        />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/cart_offer"
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/payent"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/descount"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:background="#000000"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/to_pay"
+            android:layout_toRightOf="@+id/descount"
+            android:layout_marginTop="15dp"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:layout_margin="10dp"
+
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/rel1"
+        android:layout_below="@id/text2"
+        >
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:singleLine="true"
+            android:id="@+id/name"
+            android:background="@mipmap/email_and_password_back"
+            android:textSize="12dp"
+            android:paddingLeft="20dp"/>
+        <EditText
+            android:id="@+id/card_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Card Number"
+            android:textSize="12dp"
+            android:layout_below="@+id/name"
+            android:paddingLeft="20dp"
+            android:inputType="number"
+            android:layout_marginTop="20dp"
+            android:background="@mipmap/email_and_password_back"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card_number"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            >
+            <TextView
+                android:id="@+id/expiry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MM/YY"
+                android:textSize="12dp"
+                android:paddingTop="18dp"
+                android:paddingLeft="15dp"
+                android:background="@mipmap/rooms_background"/>
+
+            <EditText
+                android:id="@+id/cvc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="CVC"
+                android:layout_toRightOf="@+id/expiry"
+                android:layout_marginLeft="30dp"
+                android:textSize="12dp"
+                android:paddingLeft="15dp"
+                android:inputType="number"
+                android:background="@mipmap/rooms_background"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:src="@mipmap/pay_button"
+        android:id="@+id/pay_button"
+        />
+</RelativeLayout>

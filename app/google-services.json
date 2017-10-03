@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "784465069938",
+    "firebase_url": "https://book-hotel-38c0b.firebaseio.com",
+    "project_id": "book-hotel-38c0b",
+    "storage_bucket": "book-hotel-38c0b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:784465069938:android:94d24b53d92a5b1d",
+        "android_client_info": {
+          "package_name": "ammar.com.bookhotel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "784465069938-pdlanudshbmogdref1qstividimirk46.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2n4MzYgmc7nVXngvxw0ZCRcAsSFmE0Kc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
